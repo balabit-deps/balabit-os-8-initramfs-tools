@@ -1,3 +1,14 @@
+initramfs-tools (0.136ubuntu6.8) focal; urgency=medium
+
+  * Fix configuring BOOTIF when using iSCSI (LP: #2056187)
+  * Port the net autopkgtest to the common test framework. This drops
+    depending on downloading a cloud image from the Internet and reduces
+    the execution time from 3:19 min down to 0:57 min. Also backport
+    autopkgtest improvements from version 0.142ubuntu23 to run the
+    test on all architectures and to check more results from qemu-net.
+
+ -- Benjamin Drung <bdrung@ubuntu.com>  Tue, 19 Mar 2024 13:12:51 +0100
+
 initramfs-tools (0.136ubuntu6.7) focal; urgency=medium
 
   * Increase image file to 2GB in autopkgtest (LP: #1958904)
